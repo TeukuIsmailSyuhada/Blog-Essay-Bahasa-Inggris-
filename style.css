@@ -631,6 +631,25 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Logo Branding Group */
+.logo-group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-group img {
+    height: 48px;
+    width: auto;
+    object-fit: contain;
+}
+
+.logo-divider {
+    width: 2px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
 /* Responsiveness */
 @media (max-width: 992px) {
     .hero-grid {
