@@ -431,62 +431,67 @@ header:hover .nav-links a span {
     color: var(--text-main);
 }
 
-/* Team Section */
-.team-grid {
+/* Authors Section - Creative Text-Only Layout */
+.authors-grid-creative {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
 }
 
-.team-card {
+.author-item {
     background: white;
-    border-radius: 20px;
-    padding: 1.5rem;
+    padding: 2rem;
+    border-radius: 25px;
     display: flex;
-    gap: 2rem;
     align-items: center;
+    gap: 2rem;
     box-shadow: var(--shadow);
+    border: 1px solid rgba(16, 185, 129, 0.05);
     transition: var(--transition);
-}
-
-.team-card:hover {
-    transform: scale(1.02);
-}
-
-.team-card.featured {
-    border: 1px solid rgba(225, 25, 0, 0.3);
-}
-
-.member-img {
-    width: 180px;
-    height: 180px;
-    border-radius: 12px;
+    position: relative;
     overflow: hidden;
+}
+
+.author-item:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary);
+}
+
+.author-initial {
+    width: 80px;
+    height: 80px;
+    background: var(--bg-light);
+    color: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    border-radius: 20px;
+    font-family: 'Outfit', sans-serif;
     flex-shrink: 0;
+    border: 2px solid var(--primary-light);
 }
 
-.member-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.author-info-box h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.3rem;
+    color: var(--secondary);
 }
 
-.member-info h3 {
-    font-size: 1.4rem;
-    margin-bottom: 0.5rem;
-}
-
-.member-info .meta {
+.author-info-box p {
     font-size: 0.9rem;
     color: var(--text-muted);
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
 }
 
-.tag-author {
-    display: inline-block;
-    color: var(--primary);
+.author-tag {
+    font-size: 0.75rem;
     font-weight: 700;
-    font-size: 0.8rem;
+    background: var(--primary-light);
+    color: var(--primary-dark);
+    padding: 4px 12px;
+    border-radius: 10px;
     text-transform: uppercase;
 }
 
