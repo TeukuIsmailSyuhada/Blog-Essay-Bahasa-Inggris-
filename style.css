@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --primary: #10B981;
-    /* Emerald Green */
-    --primary-light: #D1FAE5;
-    --primary-dark: #059669;
-    --secondary: #064E3B;
-    /* Deep Forest Green */
-    --accent: #F59E0B;
-    /* Amber for contrast */
-    --text-main: #1F2937;
-    --text-muted: #6B7280;
-    --bg-light: #F0FDF4;
-    /* Very light green bg */
+    --primary: #8d6e63;
+    /* Soft Brown */
+    --primary-light: #efebe9;
+    --primary-dark: #5d4037;
+    --secondary: #3e2723;
+    /* Deep Cocoa */
+    --accent: #d4a373;
+    /* Earthy Gold */
+    --text-main: #2c1810;
+    --text-muted: #795548;
+    --bg-light: #faf7f2;
+    /* Warm Cream */
     --bg-white: #FFFFFF;
-    --glass: rgba(255, 255, 255, 0.85);
-    --shadow: 0 10px 30px rgba(6, 78, 59, 0.08);
+    --glass: rgba(255, 255, 255, 0.9);
+    --shadow: 0 10px 40px rgba(62, 39, 35, 0.08);
     --border-radius: 20px;
     --transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -78,8 +78,8 @@ header {
     padding: 2rem 0;
     border-radius: 35px;
     z-index: 1000;
-    border: 1px solid rgba(16, 185, 129, 0.1);
-    box-shadow: 0 20px 50px rgba(6, 78, 59, 0.1);
+    border: 1px solid rgba(141, 110, 99, 0.1);
+    box-shadow: 0 20px 50px rgba(62, 39, 35, 0.1);
     transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     overflow: hidden;
     display: flex;
@@ -231,8 +231,8 @@ header:hover .nav-links a span {
     background: white;
     border-radius: 24px;
     padding: 10px;
-    box-shadow: 0 40px 80px rgba(6, 78, 59, 0.15);
-    border: 1px solid rgba(16, 185, 129, 0.1);
+    box-shadow: 0 40px 80px rgba(62, 39, 35, 0.15);
+    border: 1px solid rgba(141, 110, 99, 0.1);
     position: relative;
     overflow: hidden;
 }
@@ -320,7 +320,7 @@ header:hover .nav-links a span {
     border-radius: 35px;
     padding: 4rem;
     box-shadow: var(--shadow);
-    border: 1px solid rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(141, 110, 99, 0.05);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
@@ -389,7 +389,7 @@ header:hover .nav-links a span {
     height: 550px;
     border-radius: 40px;
     overflow: hidden;
-    box-shadow: 20px 20px 60px rgba(6, 78, 59, 0.15);
+    box-shadow: 20px 20px 60px rgba(62, 39, 35, 0.15);
     border: 8px solid white;
 }
 
@@ -407,7 +407,7 @@ header:hover .nav-links a span {
     margin-left: -60px;
     z-index: 1;
     box-shadow: var(--shadow);
-    border: 1px solid rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(141, 110, 99, 0.05);
 }
 
 .lecturer-content-creative h2 {
@@ -459,10 +459,11 @@ header:hover .nav-links a span {
     align-items: center;
     gap: 2rem;
     box-shadow: var(--shadow);
-    border: 1px solid rgba(16, 185, 129, 0.05);
+    border: 1px solid rgba(141, 110, 99, 0.05);
     transition: var(--transition);
     position: relative;
     overflow: hidden;
+    flex-wrap: wrap;
 }
 
 .author-item:hover {
@@ -471,8 +472,8 @@ header:hover .nav-links a span {
 }
 
 .author-initial {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     background: var(--bg-light);
     color: var(--primary);
     display: flex;
@@ -480,17 +481,19 @@ header:hover .nav-links a span {
     justify-content: center;
     font-size: 2.5rem;
     font-weight: 800;
-    border-radius: 20px;
+    border-radius: 50%;
     font-family: 'Outfit', sans-serif;
     flex-shrink: 0;
-    border: 2px solid var(--primary-light);
+    border: 4px solid var(--primary-light);
     overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
 .author-initial img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    object-position: center 20%;
 }
 
 .author-info-box h3 {
@@ -510,9 +513,116 @@ header:hover .nav-links a span {
     font-weight: 700;
     background: var(--primary-light);
     color: var(--primary-dark);
-    padding: 4px 12px;
+    padding: 6px 14px;
     border-radius: 10px;
     text-transform: uppercase;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+.btn-assignment {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: var(--primary);
+    color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 12px;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+    width: fit-content;
+}
+
+.btn-assignment:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(141, 110, 99, 0.3);
+}
+
+.assignment-details {
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease;
+    opacity: 0;
+}
+
+.author-item.active .assignment-details {
+    max-height: 2000px;
+    opacity: 1;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--primary-light);
+}
+
+.assignment-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: var(--secondary);
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.assignment-title::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--primary-light);
+}
+
+.assignment-list {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.assignment-card {
+    background: var(--bg-light);
+    padding: 1.5rem;
+    border-radius: 18px;
+    border-left: 4px solid var(--primary);
+}
+
+.assignment-card h4 {
+    font-size: 1rem;
+    color: var(--secondary);
+    margin-bottom: 0.8rem;
+}
+
+.assignment-card .task-content {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.intro-text {
+    line-height: 1.8;
+    font-style: italic;
+    color: var(--text-main);
+    padding: 1rem;
+    background: white;
+    border-radius: 12px;
+    border: 1px solid var(--primary-light);
+}
+
+.btn-download {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-top: 1rem;
+}
+
+.btn-download:hover {
+    color: var(--primary-dark);
 }
 
 /* Essay Cards */
@@ -658,6 +768,43 @@ footer {
 }
 
 /* Responsiveness */
+@media (max-width: 1024px) {
+    header {
+        top: auto;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        height: 70px;
+        flex-direction: row;
+        padding: 0 1rem;
+        border-radius: 20px;
+    }
+
+    header:hover {
+        width: 90%;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-around;
+        padding: 0;
+    }
+
+    .nav-links a span {
+        display: none;
+    }
+
+    .container {
+        padding: 0 1.5rem;
+    }
+
+    .hero {
+        padding: 120px 0 60px;
+    }
+}
+
 @media (max-width: 992px) {
     .hero-grid {
         grid-template-columns: 1fr;
@@ -668,15 +815,54 @@ footer {
         justify-content: center;
     }
 
-    .lecturer-card {
-        flex-direction: column;
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .team-grid {
+    .lecturer-card {
         grid-template-columns: 1fr;
     }
 
-    .nav-links {
+    .lecturer-content-creative {
+        margin-left: 0;
+        margin-top: -40px;
+        border-radius: 40px;
+        padding: 3rem 2rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .authors-grid-creative {
+        grid-template-columns: 1fr;
+    }
+
+    .author-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .author-info-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-unified-box {
+        grid-template-columns: 1fr;
+        padding: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+
+    .assignment-title::after {
         display: none;
     }
 }
