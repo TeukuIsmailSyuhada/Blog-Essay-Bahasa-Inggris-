@@ -151,8 +151,7 @@
                     <!-- Author 1: GIOVANY DAFFA FARREL -->
                     <div class="author-item">
                         <div class="author-initial">
-                            <img src="daffafarrelgiovanny.PNG" alt="DAFFA FARREL GIOVANY"
-                                style="object-position: center 10%; transform: scale(1.0);">
+                            <img src="daffafarrelgiovanny.PNG" alt="DAFFA FARREL GIOVANY">
                         </div>
                         <div class="author-info-box">
                             <h3>DAFFA FARREL GIOVANY</h3>
@@ -197,8 +196,7 @@
                     <!-- Author 2: MUHAMMAD ALAWI -->
                     <div class="author-item">
                         <div class="author-initial">
-                            <img src="muhammadalawi.PNG" alt="MUHAMMAD ALAWI"
-                                style="object-position: center 10%; transform: scale(1.0);">
+                            <img src="muhammadalawi.PNG" alt="MUHAMMAD ALAWI">
                         </div>
                         <div class="author-info-box">
                             <h3>MUHAMMAD ALAWI</h3>
@@ -242,8 +240,7 @@
                     </div>
                     <div class="author-item">
                         <div class="author-initial">
-                            <img src="teukuismailsyuhada-removebg-preview.png" alt="TEUKU ISMAIL SYUHADA"
-                                style="object-position: center 10%; transform: scale(1.0);">
+                            <img src="teukuismailsyuhada-removebg-preview.png" alt="TEUKU ISMAIL SYUHADA">
                         </div>
                         <div class="author-info-box">
                             <h3>TEUKU ISMAIL SYUHADA</h3>
@@ -419,12 +416,13 @@
         };
 
         // Scroll Reveal Animations
-        ScrollReveal().reveal('.hero-content', { delay: 200, origin: 'left', distance: '50px' });
-        ScrollReveal().reveal('.hero-image', { delay: 400, origin: 'right', distance: '50px' });
-        ScrollReveal().reveal('.info-card', { delay: 200, interval: 100, origin: 'bottom', distance: '30px' });
-        ScrollReveal().reveal('.section-title', { delay: 100, origin: 'bottom', distance: '30px' });
-        ScrollReveal().reveal('.author-item', { delay: 200, interval: 100, origin: 'bottom', distance: '30px' });
-        ScrollReveal().reveal('.essay-card', { delay: 200, interval: 100, origin: 'bottom', distance: '30px' });
+        ScrollReveal().reveal('.hero-content', { delay: 200, origin: 'left', distance: '100px', duration: 1000 });
+        ScrollReveal().reveal('.hero-image', { delay: 400, origin: 'right', distance: '100px', duration: 1000 });
+        ScrollReveal().reveal('.section-title', { delay: 100, origin: 'bottom', distance: '50px', duration: 800 });
+        ScrollReveal().reveal('.unified-item', { delay: 200, interval: 100, origin: 'bottom', distance: '50px', duration: 800 });
+        ScrollReveal().reveal('.lecturer-card', { delay: 300, origin: 'bottom', distance: '80px', duration: 1000 });
+        ScrollReveal().reveal('.author-item', { delay: 200, interval: 150, origin: 'bottom', distance: '100px', scale: 0.9, duration: 1000 });
+        ScrollReveal().reveal('.essay-card', { delay: 200, interval: 150, origin: 'bottom', distance: '100px', duration: 1000 });
 
         // Toggle Assignment Details
         function toggleAssignment(element) {
